@@ -1,4 +1,4 @@
-<mat-form-field [formGroup]="group">
+<mat-form-field [formGroup]="group" class="full-container">
   <mat-select [placeholder]="config.label" [formControlName]="config.name">
     <mat-option *ngFor="let option of config.options" [value]="option.key">
       {{ option.value }}
