@@ -2,3 +2,11 @@
 <mat-toolbar color="primary">
   <h1>Dynamic Forms</h1>
 </mat-toolbar>
+
+<section class="form">
+  <tpc-dynamic-forms
+    [configs]="configs"
+    (dfSubmit)="onSubmit($event)"
+    >
+  </tpc-dynamic-forms>
+</section>

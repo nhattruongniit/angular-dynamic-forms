@@ -1,0 +1,16 @@
+<form novalidate (ngSubmit)="onSubmit()" [formGroup]="group">
+  <div class="container">
+    <div class="form-group"
+      *ngFor="let config of configs">
+      <ng-container
+        dynamicField
+        [config]="config"
+        [group]="group"
+        >
+      </ng-container>
+    </div>
+    <div>
+      <button mat-raised-button color="primary" type="submit">Submit</button>
+    </div>
+  </div>
+</form>

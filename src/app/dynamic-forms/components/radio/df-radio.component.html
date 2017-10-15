@@ -1,0 +1,8 @@
+<div [formGroup]="group">
+  <mat-radio-group [formControlName]="config.name">
+    <mat-radio-button *ngFor="let button of config.options"
+      [value]="button.key">
+      {{ button.value }}
+    </mat-radio-button>
+  </mat-radio-group>
+</div>
